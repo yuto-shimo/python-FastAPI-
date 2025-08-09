@@ -1,4 +1,4 @@
-from enemy import *
+from section2.enemy import *
 import random
 
 class Ogre(Enemy):

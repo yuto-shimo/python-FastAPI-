@@ -1,7 +1,6 @@
-from enemy import *
 from zombie import *
 from ogre import *
-from hero import *
+from section2.hero import *
 from weapon import *
 
 def battle(e1:Enemy,e2:Enemy):
@@ -10,7 +9,7 @@ def battle(e1:Enemy,e2:Enemy):
 
     while e1.health_points > 0 and e2.health_points > 0:
         print("----------")
-        e1.special_attack()
+
         e2.special_attack()
         print(f"{e1.get_type_of_enemy()}:{e1.health_points}HP left!")
         print(f"{e2.get_type_of_enemy()}:{e2.health_points}HP left!")
